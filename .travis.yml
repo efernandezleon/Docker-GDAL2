@@ -1,0 +1,12 @@
+sudo: required
+
+services:
+  - docker
+
+branches:
+  only:
+    - master
+
+install:
+  - docker build -t efernandez/gdal2 2.4.0/
+
